@@ -1,4 +1,4 @@
-## NOTE: This demo will not work until you replace `[GOOGLE_API_KEY]` in index.html with your Google API key.
+### NOTE: This demo will not work until you replace `[GOOGLE_API_KEY]` in index.html with your Google API key.
 
 ### Qbox.io searchable map demo
 
@@ -14,9 +14,6 @@
 - [bootstrap-slider.js](http://www.eyecon.ro/bootstrap-slider/)
 - qbox-map.js
 
-
-### To use as-is
-- Just clone this repository and open index.html. :)
 
 ### To use with your elasticsearch endpoint and Google API key
 Open qbox-map.js and look at the first few lines: 
