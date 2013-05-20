@@ -1,4 +1,4 @@
-### NOTE: This demo will not work until you replace `[GOOGLE_API_KEY]` in index.html with your Google API key.
+*NOTE: This demo will not work until you replace `[GOOGLE_API_KEY]` in index.html with your Google API key. (instructions [here](https://developers.google.com/maps/documentation/javascript/tutorial))*
 
 ### Qbox.io searchable map demo
 
@@ -32,5 +32,5 @@ Replace `ELASTICSEARCH_INDEX_ENDPOINT` with your index endpoint.
 You will also need to use your `GOOGLE_API_KEY` in index.html:
 
 ```html
-    <script src="https://maps.googleapis.com/maps/api/js?key=[GOOGLE_API_KEY]&amp;sensor=false"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=[GOOGLE_API_KEY]&amp;sensor=false"></script>
 ```
