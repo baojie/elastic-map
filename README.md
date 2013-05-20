@@ -6,7 +6,7 @@
 - Searching is performed server-side by [Elasticsearch](http://www.elasticsearch.org).
 - The UI is constructed with [Google Maps](https://developers.google.com/maps/documentation/javascript/) and [Bootstrap](http://twitter.github.io/bootstrap).
 
-### Dependencies (included)
+### Dependencies
 
 - jQuery v1.9.1
 - Bootstrap v2.3.1
@@ -25,7 +25,6 @@ Open qbox-map.js and look at the first few lines:
 .
 .
 .
-}
 ```
 Replace `ELASTICSEARCH_INDEX_ENDPOINT` with your index endpoint.
 
@@ -33,4 +32,24 @@ You will also need to use your `GOOGLE_API_KEY` in index.html:
 
 ```html
   <script src="https://maps.googleapis.com/maps/api/js?key=[GOOGLE_API_KEY]&amp;sensor=false"></script>
+```
+
+You will probably also want to edit the handlebars template in qbox-map.js for the results to match the structure of your data:
+
+```javascript
+.
+.
+.
+  var resultTemplate = Handlebars.compile('\
+    <tr class="result-row" id={{id}}>\
+      <td>{{first_name}}</td>\
+      <td>{{last_name}}</td>\
+      <td>{{email}}</td>\
+      <td>{{formatted_lat}}</td>\
+      <td>{{formatted_lon}}</td>\
+    </tr>\
+  ');
+.
+.
+.
 ```
