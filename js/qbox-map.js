@@ -1,4 +1,3 @@
-
 (function(){
 
   var ELASTICSEARCH_INDEX_ENDPOINT = 'http://api.qbox.io/mqlewrfa/people/person';
