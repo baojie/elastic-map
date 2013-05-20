@@ -16,7 +16,7 @@
 
 
 ### To use with your elasticsearch endpoint and Google API key
-Open qbox-map.js and look at the first few lines: 
+Open qbox-map.js and replace `ELASTICSEARCH_INDEX_ENDPOINT` with your index endpoint: 
 
 ```javascript
 (function(){
@@ -26,7 +26,6 @@ Open qbox-map.js and look at the first few lines:
 .
 .
 ```
-Replace `ELASTICSEARCH_INDEX_ENDPOINT` with your index endpoint.
 
 You will also need to use your `GOOGLE_API_KEY` in index.html:
 
@@ -34,7 +33,7 @@ You will also need to use your `GOOGLE_API_KEY` in index.html:
   <script src="https://maps.googleapis.com/maps/api/js?key=[GOOGLE_API_KEY]&amp;sensor=false"></script>
 ```
 
-You will probably also want to edit the handlebars template in qbox-map.js for the results to match the structure of your data:
+You will probably also want to edit the handlebars template for the results (in qbox-map.js) to match the structure of your data:
 
 ```javascript
 .
