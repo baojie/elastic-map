@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>qbox js</title>
+
+  <link href="css/bootstrap.css" media="all" rel="stylesheet">
+  <link href="css/slider.css" media="all" rel="stylesheet">
+  <link href="css/app.css" media="all" rel="stylesheet">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap-slider.js"></script>
+  <script src="js/handlebars-1.0.0-rc.3.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=[GOOGLE_API_KEY]&amp;sensor=false"></script>
+  <script src="js/qbox-map.js"></script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <header class='navbar navbar-fixed-top navbar-inverse'>
+    <div class='navbar-inner'>
+      <div class='container'>
+        <a class="brand" href="/">qbox.io demo</a>
+      </div>
+    </div>
+  </header>
+
+  <div class='container'>
+
+    <div class="row">
+      <div class="span12">
+        <h3>qbox.io map demo</h3>
+        <div class=" hero-unit less-pad">
+          This demo uses a <a target="_blank" href="http://qbox.io">qbox.io</a> search index populated with a million records.<br>
+          Searching is performed server-side by <a target="_blank" href="http://www.elasticsearch.org">Elasticsearch</a>.<br>
+          The UI is constructed with <a target="_blank" href="https://developers.google.com/maps/documentation/javascript/">Googe Maps</a> 
+          and <a target="_blank" href="http://twitter.github.io/bootstrap/">Bootstrap</a>.
+        </div>
+        <hr>
+      </div>
+    </div>
+
+    <div class='page-header'>
+      <h1>
+        Demo
+        <small>Map</small>
+      </h1>
+    </div>
+    <div class='lead'>Drag the circle or change the radius to find results. Click a pin to highlight a result.</div>
+    <div id='map-canvas'></div>
+    <div id='radius-controls'>
+      Radius:
+      <span id='radius-val'></span>
+    </div>
+    <div id='radius-slider'></div>
+    <h3>
+      Results
+      <span id='max_results'></span>
+    </h3>
+    <div class='row'>
+      <div class='span12'>
+        <table class='table table-striped table-bordered table-condensed'>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Latitude</th>
+              <th>Longitude</th>
+            </tr>
+          </thead>
+          <tbody id='results'></tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer class='footer'>
+      <small>
+        by
+        <a href='http://stacksearch.com/' target='_blank'>StackSearch</a>
+      </small>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+  </div>
+</body>
+</html>
