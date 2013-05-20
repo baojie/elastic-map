@@ -12,6 +12,7 @@
 - Bootstrap v2.3.1
 - Handlebars v1.0.0-rc.3
 - [bootstrap-slider.js](http://www.eyecon.ro/bootstrap-slider/)
+- Google Maps JavaScript API v3
 - qbox-map.js
 
 
