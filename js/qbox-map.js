@@ -1,6 +1,6 @@
 (function(){
 
-  var ELASTICSEARCH_INDEX_ENDPOINT = 'http://api.qbox.io/hnbiojicnyvmqlqf/people/person';
+  var ELASTICSEARCH_INDEX_ENDPOINT = 'http://api.qbox.io/jeeipzgmtkuufaby/people/person';
 
   var METERS_PER_MILE = 1609.34;
 
